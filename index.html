@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/408ae21b68.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display2=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <main>
+       <div id="errorDiv">
+        <p class="errorMessage">ESTE CAMPO ES OBLIGATORIO, NO TE OLVIDES DE COMPLETARLO!</p>
+        <img src="img/avatar.png">
+      </div><!--fin del errorDiv-->
+      <div class="contenedor">
+        <div class="imagen flex">
+          <i class="fas fa-user-tie relative ico-user"></i>
+           <h1 class="relative fw700">informacion de contacto</h1>
+           <p class="relative"><i class="fas fa-envelope ico"></i> info.contacto@gmail.com</p>
+           <p class="relative"><i class="fas fa-mobile-alt ico"></i> +54(351)902-8665</p>
+        </div>
+        <div class="formulario flex">
+          <form>
+            <label for= "name">Nombre:<span>*</span></label>
+            <input type = "text" name= "name" id= "name" placeholder="Tu Nombre" required>
+            <label for= "telefono">Telefono:</label>
+            <input type= "tel" name= "telefono" id= "telefono" placeholder="Tu Telefono">
+            <label for= "email">E-mail:<span>*</span></label>
+            <input type= "email" name= "email" id= "email" placeholder="Tu e-mail" required>
+            <label for= "mensaje">Escribe tu mensaje:</label>
+            <textarea id= "mensaje"  placeholder="Escribe tu mensaje aqui..." required></textarea>
+            <div class="cont-boton">
+            <input type= "submit" id= "btnSend" value="Enviar Mensaje">
+            </div>
+          </form>
+        </div><!--fin del div formulario-->
+      </div><!--fin del contenedor-->
+     
+    </main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
